@@ -13,5 +13,4 @@ namespace WebRegistration.models
         public string Password { get; set; }
 
     }
-
 }
