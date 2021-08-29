@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebRegistration.models;
+using System.Collections.Generic;
 namespace WebRegistration.Controllers
 {
     public class HomeController : Controller
     {
+        public static List<User> SignInUsers = new List<User>();
         public IActionResult Index() => View();
 
         public ViewResult SignIn() => View();
@@ -16,7 +18,7 @@ namespace WebRegistration.Controllers
         public ViewResult SignUp(User user)
         {
 
-
+          SignInUsers.Add(user);
           return View();
         }
     }
