@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace WebRegistration.models
 {
+    
     public class User
     {
 
