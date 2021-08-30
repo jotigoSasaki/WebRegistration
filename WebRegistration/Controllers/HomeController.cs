@@ -18,8 +18,8 @@ namespace WebRegistration.Controllers
         public ViewResult SignUp(User user)
         {
 
-          SignInUsers.Add(user);
-          return View();
+          
+          return View("UserProfile",user);
         }
     }
 }
